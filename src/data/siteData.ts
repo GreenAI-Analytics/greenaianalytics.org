@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://greenaianalytics.org",
   tagline: "From NACE Code to CSRD Report in Minutes",
   description: "AI-powered compliance & carbon tools for EU SMEs",
-  calendly: "https://calendly.com/your-calendly-username", // ← CHANGE THIS LINE ONLY
+  calendly: "https://calendly.com/zamil-khan-carbontrackai/intro", // ← UPDATED
 };
 
 export const products = {
@@ -12,7 +12,7 @@ export const products = {
     subtitle: "Never miss another EU regulation",
     description: "Automatically detects all applicable EU requirements based on your NACE code with smart reminders and a full knowledge hub.",
     url: "https://compliance.greenaianalytics.org",
-    status: "Live now",
+    status: "Launching Soon",
   },
   carbon: {
     name: "Carbon Track AI",
@@ -31,7 +31,7 @@ export const products = {
 export const pricing = [
   {
     name: "Compliance Tracker",
-    price: "€9.99",
+    price: "€14.99",
     period: "/month",
     features: ["All EU regulations", "NACE-based detection", "Reminders & knowledge hub"],
   },
