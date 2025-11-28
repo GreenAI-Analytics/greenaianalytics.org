@@ -23,7 +23,7 @@ export const products = {
     name: "OS For Work",
     subtitle: "100% free & open-source business stack",
     url: "/open-source", // points to your own page later
-    github: "https://github.com/GreenAI-Analytics/os-for-work", // only the specific repo
+    github: "https://codeberg.org/greenaianalytics/os-for-work", // only the specific repo
     description: "One-click local installer with OnlyOffice, Nextcloud, CryptPad, ERPNext and more.",
   },
 };

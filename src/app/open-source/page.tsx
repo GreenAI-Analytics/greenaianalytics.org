@@ -28,8 +28,8 @@ export default function OpenSourcePage() {
                 ))}
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://github.com/GreenAI-Analytics/os-for-work/archive/refs/tags/v1.3.2.zip" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center">
-                  <Download className="mr-2" /> Download v1.3.2 ZIP (Universal)
+                <a href="https://codeberg.org/greenaianalytics/os-for-work/archive/main.zip" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center">
+                  <Download className="mr-2" /> Download v1.4.0 ZIP (Universal)
                 </a>
                 <a href="https://github.com/GreenAI-Analytics/os-for-work/releases/tag/v1.3.2" className="border-2 border-primary text-primary font-bold py-4 px-8 rounded-lg hover:bg-green-50 transition inline-flex items-center justify-center">
                   View Release Notes →
