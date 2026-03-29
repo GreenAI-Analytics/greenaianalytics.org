@@ -38,7 +38,7 @@ export default function OpenSourcePage() {
               <p className="text-sm text-gray-500 mt-4">Works on Windows · macOS · Linux · Completely offline</p>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/images/os-for-work-preview.jpg" alt="OS For Work" width={800} height={600} className="w-full h-auto" />
+              <Image src="/images/os-for-work-preview.svg" alt="OS For Work" width={1200} height={800} className="w-full h-auto" />
               <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full font-bold">v1.3.2</div>
             </div>
           </div>
