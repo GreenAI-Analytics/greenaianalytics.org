@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
 
 export const metadata: Metadata = {
-  title: "GreenAI Analytics – EU Compliance & Carbon Tools for SMEs",
+  title: "GreenAI Analytics | Modern EU Compliance Platform",
   description: "From NACE Code to CSRD Report in Minutes",
 };
 
@@ -18,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} text-gray-900 bg-white`}>
+      <body className={`${manrope.variable} ${spaceGrotesk.variable} text-slate-900 antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

@@ -1,34 +1,44 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteData";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur shadow-sm z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="fixed left-0 right-0 top-0 z-50 px-4 pt-4 md:px-6">
+      <div className="section-shell">
+        <div className="glass-panel rounded-2xl px-4 py-3 md:px-6 md:py-4">
+          <div className="flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.png"
             alt="GreenAI Analytics"
             width={180}
             height={60}
-            className="h-12 w-auto"
+            className="h-10 w-auto md:h-11"
           />
         </Link>
-        <nav className="hidden md:flex items-center gap-8">
-          <Link href="/#solutions" className="text-gray-700 hover:text-primary font-medium">
+
+            <nav className="hidden items-center gap-7 md:flex">
+          <Link href="/#solutions" className="text-sm font-semibold text-slate-700 transition hover:text-slate-950">
             Solutions
           </Link>
-          <Link href="/#pricing" className="text-gray-700 hover:text-primary font-medium">
+          <Link href="/#pricing" className="text-sm font-semibold text-slate-700 transition hover:text-slate-950">
             Pricing
           </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-primary font-medium">
+          <Link href="/open-source" className="text-sm font-semibold text-slate-700 transition hover:text-slate-950">
+            Open Source
+          </Link>
+          <Link href="/contact" className="text-sm font-semibold text-slate-700 transition hover:text-slate-950">
             Contact
           </Link>
-          <a href={siteConfig.calendly} className="btn-primary text-sm">
-            Book Demo
+            </nav>
+
+            <a href={siteConfig.calendly} className="btn-primary gap-2 px-4 py-2 text-sm">
+            Book Demo <ArrowUpRight className="h-4 w-4" />
           </a>
-        </nav>
+          </div>
+        </div>
       </div>
     </header>
   );

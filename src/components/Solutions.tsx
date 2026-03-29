@@ -25,42 +25,40 @@ const iconMap: Record<SolutionIcon, LucideIcon> = {
 
 export default function Solutions({ solutions }: { solutions: Solution[] }) {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {solutions.map((solution) => {
         const IconComponent = iconMap[solution.icon] ?? Zap;
 
         return (
           <div
             key={solution.id}
-            className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow bg-white group"
+            className="group overflow-hidden rounded-2xl border border-white/80 bg-white/85 shadow-lg shadow-slate-900/5 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
-            {/* Image Container */}
-            <div className={`relative h-48 bg-gradient-to-br ${solution.color} overflow-hidden`}>
+            <div className={`relative h-44 overflow-hidden bg-gradient-to-br ${solution.color}`}>
               <Image
                 src={solution.image}
                 alt={solution.name}
                 width={400}
                 height={300}
-                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                className="h-full w-full object-cover opacity-80 transition duration-300 group-hover:scale-105 group-hover:opacity-95"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all flex items-center justify-center">
-                <div className="bg-white rounded-full p-4">
-                  <IconComponent className="w-8 h-8 text-gray-900" strokeWidth={2} />
+              <div className="absolute inset-0 flex items-center justify-center bg-slate-900/20 transition-all group-hover:bg-slate-900/10">
+                <div className="rounded-full bg-white p-4 shadow-lg">
+                  <IconComponent className="h-7 w-7 text-slate-900" strokeWidth={2} />
                 </div>
               </div>
             </div>
 
-            {/* Content Container */}
-            <div className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{solution.name}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                {solution.description}
+            <div className="p-7">
+              <h3 className="mb-3 text-xl font-bold text-slate-950">{solution.name}</h3>
+              <p className="mb-6 text-sm leading-relaxed text-slate-600">
+                {solution.description.slice(0, 190)}...
               </p>
               <Link
                 href={`/contact?service=${solution.id}`}
-                className="inline-flex items-center text-primary font-semibold hover:text-green-700 transition"
+                className="inline-flex items-center text-sm font-semibold text-emerald-700 transition hover:text-emerald-800"
               >
-                Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                Learn More <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
           </div>

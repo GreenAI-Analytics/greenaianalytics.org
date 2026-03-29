@@ -2,8 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  --surface-0: #f4f8f7;
+  --surface-1: #ffffff;
+  --surface-2: #e8f2ef;
+  --text-900: #0f1721;
+  --text-700: #3d4c5d;
+  --brand-600: #0e8f63;
+  --brand-700: #0b704f;
+  --accent-500: #0e7490;
+  --border-soft: rgba(15, 23, 33, 0.12);
+}
+
+html,
+body {
+  background: radial-gradient(circle at 80% 8%, #dbf0e8 0%, transparent 35%),
+    radial-gradient(circle at 8% 20%, #d8ebf3 0%, transparent 30%),
+    linear-gradient(180deg, #f8fbfa 0%, #f2f7f5 100%);
+  color: var(--text-900);
+  font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+* {
+  border-color: var(--border-soft);
+}
+
 @layer components {
   .btn-primary {
-    @apply bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg transition shadow-lg hover:shadow-xl;
+    @apply inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold text-white transition-all duration-300;
+    background: linear-gradient(135deg, var(--brand-600), var(--accent-500));
+    box-shadow: 0 14px 30px -14px rgba(14, 143, 99, 0.8);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    background: linear-gradient(135deg, var(--brand-700), #0e6680);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold transition-all duration-300;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid var(--border-soft);
+    color: var(--text-900);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-1px);
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-6;
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 24px 42px -34px rgba(15, 23, 33, 0.45);
   }
 }
