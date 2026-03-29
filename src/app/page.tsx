@@ -3,6 +3,10 @@ import Pricing from "@/components/Pricing";
 import Solutions from "@/components/Solutions";
 import Image from "next/image";
 import { ArrowRight, Check, Download } from "lucide-react";
+import type { Solution } from "@/data/siteData";
+
+// Type assertion for the imported solutions to fix TypeScript error
+const typedSolutions = solutions as Solution[];
 
 export default function Home() {
   return (
@@ -121,7 +125,7 @@ export default function Home() {
               Comprehensive solutions designed to simplify regulatory compliance and accelerate your sustainability journey
             </p>
           </div>
-          <Solutions solutions={solutions} />
+          <Solutions solutions={typedSolutions} />
         </div>
       </section>
 
