@@ -87,7 +87,7 @@ export const solutions: Solution[] = [
     description: "Secure governance starts with trusted access. Our IAM solutions protect your most sensitive compliance and carbon accounting data through enterprise-grade authentication, role-based access controls, and comprehensive audit trails. Built with data privacy at the core, we ensure your team maintains granular control over who accesses regulatory documents, CSRD reports, and financial data—while maintaining full compliance with GDPR and other EU data protection frameworks.",
     icon: "Shield",
     image: "/images/solutions/iam.svg",
-    color: "from-purple-500 to-pink-500",
+    color: "from-slate-600 to-blue-600",
   },
   {
     id: "workforce-management",
@@ -103,7 +103,7 @@ export const solutions: Solution[] = [
     description: "Simplify your financial operations with seamless, secure payment processing. Our Payment Platform Integration connects your compliance tracking and carbon accounting tools with leading payment gateways, enabling you to manage subscription handling, invoice reconciliation, and financial settlements without friction. Built for SaaS platforms and B2B workflows, it ensures transparent transaction records that integrate with your regulatory reporting requirements.",
     icon: "CreditCard",
     image: "/images/solutions/payment-integration.svg",
-    color: "from-orange-500 to-red-500",
+    color: "from-teal-500 to-cyan-500",
   },
   {
     id: "esg-reporting",
