@@ -1,5 +1,6 @@
-import { siteConfig, products, pricing } from "@/data/siteData";
+import { siteConfig, products, pricing, solutions } from "@/data/siteData";
 import Pricing from "@/components/Pricing";
+import Solutions from "@/components/Solutions";
 import Image from "next/image";
 import { ArrowRight, Check, Download } from "lucide-react";
 
@@ -108,6 +109,19 @@ export default function Home() {
               Debian & Ubuntu based Linux · 100% free & open source
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Solutions Section */}
+      <section id="solutions" className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive solutions designed to simplify regulatory compliance and accelerate your sustainability journey
+            </p>
+          </div>
+          <Solutions solutions={solutions} />
         </div>
       </section>
 

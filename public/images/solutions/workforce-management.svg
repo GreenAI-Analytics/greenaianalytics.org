@@ -1,0 +1,16 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="workforceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#workforceGradient)"/>
+  <circle cx="140" cy="120" r="30" fill="white" opacity="0.8"/>
+  <circle cx="260" cy="120" r="30" fill="white" opacity="0.8"/>
+  <circle cx="200" cy="180" r="30" fill="white" opacity="0.8"/>
+  <path d="M 140 155 L 200 160" stroke="white" stroke-width="2" opacity="0.6"/>
+  <path d="M 260 155 L 200 160" stroke="white" stroke-width="2" opacity="0.6"/>
+  <rect x="160" y="200" width="80" height="50" rx="6" fill="white" opacity="0.4"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Workforce Management</text>
+</svg>
