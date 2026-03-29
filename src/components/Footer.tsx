@@ -1,4 +1,6 @@
 import { Github, Mail, Globe } from "lucide-react";
+import Link from "next/link";
+import { siteConfig } from "@/data/siteData";
 
 export default function Footer() {
   return (
@@ -7,7 +9,7 @@ export default function Footer() {
         <div>
           <h3 className="text-2xl font-bold mb-4">GreenAI Analytics</h3>
           <p className="text-gray-400">
-            From NACE Code to CSRD Report in Minutes
+            {siteConfig.tagline}
           </p>
         </div>
         <div>
@@ -33,9 +35,9 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Company</h4>
           <ul className="space-y-2 text-gray-400">
-            <li><a href="#" className="hover:text-white">About</a></li>
-            <li><a href="#" className="hover:text-white">Blog</a></li>
-            <li><a href="#" className="hover:text-white">Contact</a></li>
+            <li><Link href="/" className="hover:text-white">About</Link></li>
+            <li><Link href="/" className="hover:text-white">Blog</Link></li>
+            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
           </ul>
         </div>
         <div>
@@ -54,7 +56,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-6xl mx-auto text-center text-gray-500 mt-12 text-sm">
-        © 2025 GreenAI Analytics. All rights reserved.
+        © {new Date().getFullYear()} GreenAI Analytics. All rights reserved.
       </div>
     </footer>
   );

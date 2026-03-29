@@ -55,7 +55,24 @@ export const pricing = [
   },
 ];
 
-export const solutions = [
+export type SolutionIcon =
+  | "Zap"
+  | "Shield"
+  | "Users"
+  | "CreditCard"
+  | "TrendingUp"
+  | "Package";
+
+export type Solution = {
+  id: string;
+  name: string;
+  description: string;
+  icon: SolutionIcon;
+  image: string;
+  color: string;
+};
+
+export const solutions: Solution[] = [
   {
     id: "ai-enablement",
     name: "AI Enablement",

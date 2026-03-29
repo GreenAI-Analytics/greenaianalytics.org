@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ThanksContactPage() {
   return (
     <section className="pt-32 pb-20 px-6 text-center min-h-screen bg-gradient-to-b from-green-50 to-white">
@@ -15,18 +17,18 @@ export default function ThanksContactPage() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
+          <Link
             href="/"
             className="bg-primary hover:bg-primary-dark text-white font-bold py-4 px-10 rounded-lg text-lg inline-flex items-center transition"
           >
             ← Back to Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="bg-white text-primary border-2 border-primary font-bold py-4 px-10 rounded-lg text-lg hover:bg-green-50 transition"
           >
             Send Another Message
-          </a>
+          </Link>
         </div>
       </div>
     </section>

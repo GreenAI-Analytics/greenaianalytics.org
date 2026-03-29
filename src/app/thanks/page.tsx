@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ThanksPage() {
   return (
     <section className="pt-32 pb-20 px-6 text-center min-h-screen bg-gradient-to-b from-green-50 to-white">
@@ -12,12 +14,12 @@ export default function ThanksPage() {
           We’ll email you as soon as early access opens in Q1 2026.<br />
           Get ready — this will save you hundreds of hours on CSRD reporting.
         </p>
-        <a
+        <Link
           href="/"
           className="bg-primary hover:bg-primary-dark text-white font-bold py-4 px-10 rounded-lg text-lg inline-flex items-center transition"
         >
           ← Back to Home
-        </a>
+        </Link>
       </div>
     </section>
   );

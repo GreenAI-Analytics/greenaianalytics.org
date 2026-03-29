@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { siteConfig } from "@/data/siteData";
 
 type Plan = {
   name: string;
@@ -29,7 +30,7 @@ export default function Pricing({ plans }: { plans: Plan[] }) {
             ))}
           </ul>
           <a
-            href="https://calendly.com/your-calendly-link"
+            href={siteConfig.calendly}
             className="block text-center btn-primary"
           >
             Get Started

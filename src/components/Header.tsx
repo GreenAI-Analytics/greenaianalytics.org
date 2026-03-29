@@ -16,15 +16,15 @@ export default function Header() {
           />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#solutions" className="text-gray-700 hover:text-primary font-medium">
+          <Link href="/#solutions" className="text-gray-700 hover:text-primary font-medium">
             Solutions
-          </a>
-          <a href="#pricing" className="text-gray-700 hover:text-primary font-medium">
+          </Link>
+          <Link href="/#pricing" className="text-gray-700 hover:text-primary font-medium">
             Pricing
-          </a>
-          <a href="/contact" className="text-gray-700 hover:text-primary font-medium">
+          </Link>
+          <Link href="/contact" className="text-gray-700 hover:text-primary font-medium">
             Contact
-          </a>
+          </Link>
           <a href={siteConfig.calendly} className="btn-primary text-sm">
             Book Demo
           </a>

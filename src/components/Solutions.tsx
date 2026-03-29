@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   ArrowRight,
   CreditCard,
@@ -9,17 +10,9 @@ import {
   Zap,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import type { Solution, SolutionIcon } from "@/data/siteData";
 
-type Solution = {
-  id: string;
-  name: string;
-  description: string;
-  icon: "Zap" | "Shield" | "Users" | "CreditCard" | "TrendingUp" | "Package";
-  image: string;
-  color: string;
-};
-
-const iconMap: Record<Solution["icon"], LucideIcon> = {
+const iconMap: Record<SolutionIcon, LucideIcon> = {
   Zap,
   Shield,
   Users,
@@ -61,12 +54,12 @@ export default function Solutions({ solutions }: { solutions: Solution[] }) {
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 {solution.description}
               </p>
-              <a
-                href={`#solutions-${solution.id}`}
+              <Link
+                href={`/contact?service=${solution.id}`}
                 className="inline-flex items-center text-primary font-semibold hover:text-green-700 transition"
               >
                 Learn More <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
         );
