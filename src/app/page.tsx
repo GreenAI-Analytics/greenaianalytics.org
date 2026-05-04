@@ -166,9 +166,9 @@ export default function Home() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "13 modules across E, S & G pillars",
-                  "Free: Climate, Materiality & Reports",
-                  "€99/mo: Full ESRS + EU Taxonomy",
+                  "VSME Basic: Free — Climate, S1, G1, Reports",
+                  "VSME Comprehensive: €99/mo — Full E/S/G",
+                  "CSRD: €99/mo — Full Taxonomy + iXBRL",
                 ].map((item) => (
                   <li
                     key={item}

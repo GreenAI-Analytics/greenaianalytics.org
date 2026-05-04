@@ -19,7 +19,7 @@ export const products = {
     name: "Carbon Track AI",
     subtitle: "CSRD & ESRS reporting for EU SMEs",
     description:
-      "13 ESG modules across Environmental (E1-E5), Social (S1-S4), and Governance (G1). Three modes — VSME-Lite, VSME-Full, CSRD-Full — auto-detected from your SME profile. Climate (E1), Double Materiality, and Report Builder always free.",
+      "13 ESG modules across Environmental (E1-E5), Social (S1-S4), and Governance (G1). Three modes — VSME Basic, VSME Comprehensive, CSRD — auto-detected from your SME profile. Free tier includes Climate E1, basic workforce & governance, and iXBRL-ready reports.",
     url: "https://www.carbontrackai.com",
     status: "Live",
   },
@@ -45,23 +45,33 @@ export const pricing = [
     ],
   },
   {
-    name: "Carbon Track AI — Free",
+    name: "Carbon Track AI — VSME Basic",
     price: "Free",
     period: "",
     features: [
       "Climate E1 + Scope 1 & 2 engine",
-      "Double materiality assessment",
-      "Report Builder with PDF/Excel export",
+      "Basic workforce (S1) & governance (G1)",
+      "Report Builder (PDF, JSON, iXBRL)",
     ],
   },
   {
-    name: "Carbon Track AI — Comprehensive",
+    name: "Carbon Track AI — VSME Comprehensive",
     price: "€99",
     period: "/month",
     features: [
-      "All E/S/G modules (E2-E5, S1-S4, G1)",
-      "EU Taxonomy alignment",
+      "All E/S/G modules (E2-E5, S2-S4, G1)",
+      "Simplified EU Taxonomy",
       "30-day free trial included",
+    ],
+  },
+  {
+    name: "Carbon Track AI — CSRD",
+    price: "€99",
+    period: "/month",
+    features: [
+      "Full double materiality & EU Taxonomy",
+      "Expanded ESRS 2 narratives",
+      "iXBRL / ESEF export ready",
     ],
   },
   {

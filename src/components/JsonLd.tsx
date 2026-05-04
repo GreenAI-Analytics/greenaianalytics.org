@@ -78,7 +78,7 @@ export default function JsonLd() {
       price: "0",
       priceCurrency: "EUR",
       description:
-        "Free tier: Climate E1, Double Materiality, Report Builder. Comprehensive tier: €99/month for full ESRS + EU Taxonomy with 30-day free trial.",
+        "Three tiers: VSME Basic (Free — Climate E1, basic S1 & G1, Report Builder with iXBRL), VSME Comprehensive (€99/mo — full E/S/G + simplified EU Taxonomy, 30-day free trial), CSRD (€99/mo — full double materiality + full EU Taxonomy + iXBRL/ESEF export).",
     },
     provider: {
       "@type": "Organization",

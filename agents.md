@@ -9,7 +9,7 @@ The platform consists of **two SaaS products** (separate repositories) plus an o
 | Product | Repository | Status | Description |
 |---|---|---|---|
 | **Compliance Tracker** | `C:\github-repos\compliancetracker` | Live | NACE-based EU regulation detection, automated compliance tasks, knowledge hub |
-| **Carbon Track AI** | `C:\github-repos\carbontrackai` | **Live** | 13 ESG modules: E1-E5, S1-S4, G1. Free tier (Climate + Materiality + Reports). €99/mo comprehensive. |
+| **Carbon Track AI** | `C:\github-repos\carbontrackai` | **Live** | 13 ESG modules. Three tiers: VSME Basic (Free), VSME Comprehensive (€99/mo), CSRD (€99/mo). |
 | **OS For Work** | GitHub / Codeberg | Live (v1.3.2) | Free open-source desktop stack (OnlyOffice, Nextcloud, CryptPad, ERPNext, etc.) |
 
 - **Live URL:** `https://greenaianalytics.org`
@@ -131,9 +131,10 @@ Three products (marketing copy — see individual repos for technical details):
 
 - **`carbon`** (Carbon Track AI) — status: **Live** at `https://www.carbontrackai.com`
   - 13 ESG modules across Environmental (E1-E5), Social (S1-S4), Governance (G1)
-  - Three modes: VSME-Lite, VSME-Full, CSRD-Full — auto-detected at onboarding
-  - Free tier: Climate E1 + Scope 1 & 2 engine, Double Materiality, Report Builder (PDF/Excel)
-  - Comprehensive tier: €99/mo (30-day free trial) — all E/S/G modules + EU Taxonomy
+  - Three tiers: **VSME Basic** (Free), **VSME Comprehensive** (€99/mo, 30-day trial), **CSRD** (€99/mo)
+  - VSME Basic: Climate E1 + Scope 1 & 2, basic S1 & G1, Report Builder (PDF/JSON/iXBRL), ESRS 2
+  - VSME Comprehensive: all E/S/G modules + simplified EU Taxonomy
+  - CSRD: full double materiality, full EU Taxonomy, expanded ESRS 2, iXBRL/ESEF export
   - 25+ EU country-specific emission factors (ADEME, MITECO, Climatiq, EEA)
   - Repo: `C:\github-repos\carbontrackai` | Agents: `carbontrackai\agents.md`
 
