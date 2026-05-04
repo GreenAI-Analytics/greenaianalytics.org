@@ -157,9 +157,7 @@ export default function Home() {
             </article>
 
             <article className="rounded-3xl border border-white/80 bg-white/80 p-7 shadow-lg shadow-slate-900/5">
-              <p className="text-sm font-semibold text-amber-700">
-                In development
-              </p>
+              <p className="text-sm font-semibold text-emerald-700">Live now</p>
               <h3 className="mt-2 text-2xl font-bold text-slate-950">
                 {products.carbon.name}
               </h3>
@@ -168,44 +166,25 @@ export default function Home() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "VSME Basic, Comprehensive & CSRD modes",
-                  "Full ESRS coverage across all pillars",
-                  "Double materiality & EU Taxonomy",
+                  "13 modules across E, S & G pillars",
+                  "Free: Climate, Materiality & Reports",
+                  "€99/mo: Full ESRS + EU Taxonomy",
                 ].map((item) => (
                   <li
                     key={item}
                     className="flex items-start gap-3 text-sm text-slate-700"
                   >
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-amber-700" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-700" />
                     {item}
                   </li>
                 ))}
               </ul>
-              <form
-                action="https://formsubmit.co/sales@carbontrackai.com"
-                method="POST"
-                className="mt-7 flex flex-col gap-3"
+              <a
+                href={products.carbon.url}
+                className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:text-emerald-800"
               >
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="your@company.eu"
-                  required
-                  className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm focus:border-emerald-400 focus:outline-none"
-                />
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="New Carbon Track AI Waitlist Signup!"
-                />
-                <input type="hidden" name="_next" value="/thanks" />
-                <button type="submit" className="btn-primary w-full">
-                  Join waitlist
-                </button>
-              </form>
-              <p className="mt-2 text-xs text-slate-500">
-                Zero spam. Launch updates only.
-              </p>
+                Launch product <ArrowRight className="h-4 w-4" />
+              </a>
             </article>
 
             <article className="relative overflow-hidden rounded-3xl border border-emerald-300 bg-gradient-to-br from-emerald-100 via-teal-100 to-cyan-100 p-7 shadow-lg shadow-emerald-900/10">

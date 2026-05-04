@@ -9,7 +9,7 @@ The platform consists of **two SaaS products** (separate repositories) plus an o
 | Product | Repository | Status | Description |
 |---|---|---|---|
 | **Compliance Tracker** | `C:\github-repos\compliancetracker` | Live | NACE-based EU regulation detection, automated compliance tasks, knowledge hub |
-| **Carbon Track AI** | `C:\github-repos\carbontrackai` | In development | ESG reporting platform: VSME Basic/Comprehensive + CSRD, Scope 1-3 carbon, full ESRS coverage |
+| **Carbon Track AI** | `C:\github-repos\carbontrackai` | **Live** | 13 ESG modules: E1-E5, S1-S4, G1. Free tier (Climate + Materiality + Reports). €99/mo comprehensive. |
 | **OS For Work** | GitHub / Codeberg | Live (v1.3.2) | Free open-source desktop stack (OnlyOffice, Nextcloud, CryptPad, ERPNext, etc.) |
 
 - **Live URL:** `https://greenaianalytics.org`
@@ -129,12 +129,12 @@ Three products (marketing copy — see individual repos for technical details):
   - Admin panel with trial management, billing toggles, data sync controls
   - Repo: `C:\github-repos\compliancetracker` | Agents: `compliancetracker\AGENTS.md`
 
-- **`carbon`** (Carbon Track AI) — status: **In development** (waitlist via FormSubmit)
-  - ESG reporting for EU SMEs per Recommendation 2003/361/EC
-  - Three regulatory modes: VSME Basic, VSME Comprehensive, CSRD (auto-detected at onboarding)
-  - Full ESRS coverage: E1-E5 (environmental), S1-S4 (social), G1 (governance), ESRS 2 (general disclosures)
-  - Double materiality assessments, EU Taxonomy, Scope 1 & 2 carbon calculation engine
-  - Monorepo (npm workspaces): `apps/web` (Next.js) + `apps/api` (Supabase) with 15+ SQL migrations
+- **`carbon`** (Carbon Track AI) — status: **Live** at `https://www.carbontrackai.com`
+  - 13 ESG modules across Environmental (E1-E5), Social (S1-S4), Governance (G1)
+  - Three modes: VSME-Lite, VSME-Full, CSRD-Full — auto-detected at onboarding
+  - Free tier: Climate E1 + Scope 1 & 2 engine, Double Materiality, Report Builder (PDF/Excel)
+  - Comprehensive tier: €99/mo (30-day free trial) — all E/S/G modules + EU Taxonomy
+  - 25+ EU country-specific emission factors (ADEME, MITECO, Climatiq, EEA)
   - Repo: `C:\github-repos\carbontrackai` | Agents: `carbontrackai\agents.md`
 
 - **`opensource`** (OS For Work) — free, links to `/open-source` page and GitHub/Codeberg
@@ -221,7 +221,7 @@ The body uses three layered `radial-gradient` backgrounds for a soft green/blue 
 | Service | Usage |
 |---|---|
 | **Calendly** | Demo booking (link in Header, Hero, Pricing, CTA banner) |
-| **FormSubmit** | Form handling (Carbon Track AI waitlist + Contact form). Emails go to `sales@carbontrackai.com` |
+| **FormSubmit** | Contact form handling. Emails go to `sales@carbontrackai.com` |
 | **GitHub** | OS For Work downloads/releases; org profile; compliance-rules & compliance-knowledge source repos |
 | **Codeberg** | OS For Work source repository |
 | **Google Fonts** | Manrope (body) + Space Grotesk (headings) via `next/font/google` |
@@ -231,13 +231,12 @@ The body uses three layered `radial-gradient` backgrounds for a soft green/blue 
 | Repository | Purpose | Agents File |
 |---|---|---|
 | `github.com/GreenAI-Analytics/compliancetracker` | Compliance Tracker SaaS (live) | `C:\github-repos\compliancetracker\AGENTS.md` |
-| `github.com/GreenAI-Analytics/carbontrackai` | Carbon Track AI SaaS (in development) | `C:\github-repos\carbontrackai\agents.md` |
+| `github.com/GreenAI-Analytics/carbontrackai` | Carbon Track AI SaaS (live) | `C:\github-repos\carbontrackai\agents.md` |
 | `github.com/greenaianalytics/compliance-rules` | Source JSON rule data by country/NACE (consumed by Compliance Tracker Edge Functions) | — |
 | `github.com/greenaianalytics/compliance-knowledge` | Source markdown explainer articles (consumed by Compliance Tracker Edge Functions) | — |
 
 ### FormSubmit flow
-- **Waitlist** (`page.tsx` home): `action="https://formsubmit.co/sales@carbontrackai.com"` → redirects to `/thanks`
-- **Contact** (`contact/page.tsx`): same service → redirects to `/thanks-contact`
+- **Contact** (`contact/page.tsx`): `action="https://formsubmit.co/sales@carbontrackai.com"` → redirects to `/thanks-contact`
 - Hidden fields: `_subject`, `_next`
 
 ---
@@ -308,7 +307,7 @@ This section summarizes the two core SaaS products. For full architecture, datab
 
 **Database:** 15 migrations covering 50+ tables (ESG core, social 18 tables, governance 7 tables, environmental extended, double materiality, taxonomy, ESRS 2 narratives, datapoint taxonomy reference, assurance/change tracking)
 
-**Production URL:** `https://carbontrackai-eight.vercel.app`
+**Production URL:** `https://www.carbontrackai.com`
 
 ---
 

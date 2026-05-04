@@ -71,8 +71,15 @@ export default function JsonLd() {
     name: products.carbon.name,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    url: baseUrl,
+    url: products.carbon.url,
     description: products.carbon.description,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+      description:
+        "Free tier: Climate E1, Double Materiality, Report Builder. Comprehensive tier: €99/month for full ESRS + EU Taxonomy with 30-day free trial.",
+    },
     provider: {
       "@type": "Organization",
       name: siteConfig.name,
