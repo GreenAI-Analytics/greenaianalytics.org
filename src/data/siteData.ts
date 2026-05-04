@@ -9,37 +9,48 @@ export const siteConfig = {
 export const products = {
   compliance: {
     name: "Compliance Tracker",
-    subtitle: "Never miss another EU regulation",
-    description: "Automatically detects all applicable EU requirements based on your NACE code with smart reminders and a full knowledge hub.",
-    url: "https://compliance.greenaianalytics.org",
-    status: "Launching Soon",
+    subtitle: "EU regulation tracking from your NACE code",
+    description:
+      "Automatically detects all applicable EU requirements based on your country and NACE code — with smart task scheduling, monthly calendar view, and a full knowledge hub of explainer articles.",
+    url: "https://compliancetracker.greenaianalytics.org",
+    status: "Live",
   },
   carbon: {
     name: "Carbon Track AI",
-    subtitle: "Carbon accounting + CSRD reporting in one platform",
-    description: "Scope 1–3 carbon calculations and one-click ESRS-compliant reports (PDF • Word • XBRL).",
+    subtitle: "VSME & CSRD ESG reporting for EU SMEs",
+    description:
+      "Three proportionate modes — VSME Basic, VSME Comprehensive, and CSRD — auto-detected from your SME profile. Full ESRS coverage across environmental (E1-E5), social (S1-S4), and governance (G1), plus double materiality assessments and EU Taxonomy alignment.",
   },
   opensource: {
     name: "OS For Work",
     subtitle: "100% free & open-source business stack",
     url: "/open-source", // points to your own page later
     github: "https://codeberg.org/greenaianalytics/os-for-work", // only the specific repo
-    description: "One-click local installer with OnlyOffice, Nextcloud, CryptPad, ERPNext and more.",
+    description:
+      "One-click local installer with OnlyOffice, Nextcloud, CryptPad, ERPNext and more.",
   },
 };
 
 export const pricing = [
   {
     name: "Compliance Tracker",
-    price: "€14.99",
-    period: "/month",
-    features: ["All EU regulations", "NACE-based detection", "Reminders & knowledge hub"],
+    price: "Free",
+    period: "",
+    features: [
+      "31 EU/EEA countries covered",
+      "NACE-based task automation",
+      "Monthly calendar & reminders",
+    ],
   },
   {
     name: "Carbon Track AI",
     price: "Coming Soon",
     period: "",
-    features: ["Scope 1–3 carbon accounting", "Full CSRD/ESRS reports", "AI data collection"],
+    features: [
+      "VSME Basic & Comprehensive modes",
+      "Full ESRS E1-E5, S1-S4, G1",
+      "Double materiality & EU Taxonomy",
+    ],
   },
   {
     name: "OS For Work – Local",
@@ -76,7 +87,8 @@ export const solutions: Solution[] = [
   {
     id: "ai-enablement",
     name: "AI Enablement",
-    description: "Unlock the potential of artificial intelligence to streamline your compliance and sustainability workflows. Our AI Enablement service empowers your team to automate regulatory data collection, generate intelligent insights from complex reporting requirements, and accelerate decision-making across your organization. From NACE-based regulation mapping to predictive compliance alerts, we help you harness machine learning to stay ahead of evolving EU mandates while reducing manual overhead.",
+    description:
+      "Unlock the potential of artificial intelligence to streamline your compliance and sustainability workflows. Our AI Enablement service empowers your team to automate regulatory data collection, generate intelligent insights from complex reporting requirements, and accelerate decision-making across your organization. From NACE-based regulation mapping to predictive compliance alerts, we help you harness machine learning to stay ahead of evolving EU mandates while reducing manual overhead.",
     icon: "Zap",
     image: "/images/solutions/ai-enablement.svg",
     color: "from-blue-500 to-cyan-500",
@@ -84,7 +96,8 @@ export const solutions: Solution[] = [
   {
     id: "iam",
     name: "Identity and Access Management",
-    description: "Secure governance starts with trusted access. Our IAM solutions protect your most sensitive compliance and carbon accounting data through enterprise-grade authentication, role-based access controls, and comprehensive audit trails. Built with data privacy at the core, we ensure your team maintains granular control over who accesses regulatory documents, CSRD reports, and financial data—while maintaining full compliance with GDPR and other EU data protection frameworks.",
+    description:
+      "Secure governance starts with trusted access. Our IAM solutions protect your most sensitive compliance and carbon accounting data through enterprise-grade authentication, role-based access controls, and comprehensive audit trails. Built with data privacy at the core, we ensure your team maintains granular control over who accesses regulatory documents, CSRD reports, and financial data—while maintaining full compliance with GDPR and other EU data protection frameworks.",
     icon: "Shield",
     image: "/images/solutions/iam.svg",
     color: "from-slate-600 to-blue-600",
@@ -92,7 +105,8 @@ export const solutions: Solution[] = [
   {
     id: "workforce-management",
     name: "Workforce Management",
-    description: "Align your team's efforts with your sustainability goals. Our Workforce Management platform integrates directly with your compliance and reporting workflows, enabling you to track responsibilities, deadlines, and progress on regulatory initiatives. Assign ESG-related tasks, monitor completion rates, and maintain accountability across departments—ensuring that every team member understands their role in meeting CSRD, ESRS, and other sustainability reporting obligations.",
+    description:
+      "Align your team's efforts with your sustainability goals. Our Workforce Management platform integrates directly with your compliance and reporting workflows, enabling you to track responsibilities, deadlines, and progress on regulatory initiatives. Assign ESG-related tasks, monitor completion rates, and maintain accountability across departments—ensuring that every team member understands their role in meeting CSRD, ESRS, and other sustainability reporting obligations.",
     icon: "Users",
     image: "/images/solutions/workforce-management.svg",
     color: "from-green-500 to-emerald-500",
@@ -100,7 +114,8 @@ export const solutions: Solution[] = [
   {
     id: "payment-integration",
     name: "Payment Platform Integration",
-    description: "Simplify your financial operations with seamless, secure payment processing. Our Payment Platform Integration connects your compliance tracking and carbon accounting tools with leading payment gateways, enabling you to manage subscription handling, invoice reconciliation, and financial settlements without friction. Built for SaaS platforms and B2B workflows, it ensures transparent transaction records that integrate with your regulatory reporting requirements.",
+    description:
+      "Simplify your financial operations with seamless, secure payment processing. Our Payment Platform Integration connects your compliance tracking and carbon accounting tools with leading payment gateways, enabling you to manage subscription handling, invoice reconciliation, and financial settlements without friction. Built for SaaS platforms and B2B workflows, it ensures transparent transaction records that integrate with your regulatory reporting requirements.",
     icon: "CreditCard",
     image: "/images/solutions/payment-integration.svg",
     color: "from-teal-500 to-cyan-500",
@@ -108,7 +123,8 @@ export const solutions: Solution[] = [
   {
     id: "esg-reporting",
     name: "ESG Reporting",
-    description: "Transform raw sustainability data into compelling ESG narratives. Our ESG Reporting service guides you through Scope 1, 2, and 3 emissions accounting, materiality assessments, and ESRS disclosure frameworks. We combine your compliance data with carbon accounting insights to generate comprehensive, audit-ready reports that demonstrate your environmental, social, and governance commitments to stakeholders, regulators, and investors.",
+    description:
+      "Transform raw sustainability data into compelling ESG narratives. Our ESG Reporting service guides you through Scope 1, 2, and 3 emissions accounting, materiality assessments, and ESRS disclosure frameworks. We combine your compliance data with carbon accounting insights to generate comprehensive, audit-ready reports that demonstrate your environmental, social, and governance commitments to stakeholders, regulators, and investors.",
     icon: "TrendingUp",
     image: "/images/solutions/esg-reporting.svg",
     color: "from-green-600 to-teal-600",
@@ -116,7 +132,8 @@ export const solutions: Solution[] = [
   {
     id: "sme-utility",
     name: "SME Utility Software Solutions",
-    description: "Empower your team with enterprise-grade tools designed for growth. Our SME Utility Software Solutions bring modern, affordable productivity software—including office suites, file storage, ERPNext, and analytics platforms—to organizations of any size. We provide both self-hosted (free) and managed (premium) options, giving you the flexibility to choose between total independence and turnkey support. Perfect for companies looking to escape vendor lock-in while maintaining world-class capabilities.",
+    description:
+      "Empower your team with enterprise-grade tools designed for growth. Our SME Utility Software Solutions bring modern, affordable productivity software—including office suites, file storage, ERPNext, and analytics platforms—to organizations of any size. We provide both self-hosted (free) and managed (premium) options, giving you the flexibility to choose between total independence and turnkey support. Perfect for companies looking to escape vendor lock-in while maintaining world-class capabilities.",
     icon: "Package",
     image: "/images/solutions/sme-utility.svg",
     color: "from-indigo-500 to-blue-500",

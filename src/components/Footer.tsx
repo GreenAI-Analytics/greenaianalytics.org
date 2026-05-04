@@ -14,10 +14,15 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">Products</h4>
+              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                Products
+              </h4>
               <ul className="space-y-3 text-slate-300">
                 <li>
-                  <a href="https://compliance.greenaianalytics.org" className="transition hover:text-white">
+                  <a
+                    href="https://compliancetracker.greenaianalytics.org"
+                    className="transition hover:text-white"
+                  >
                     Compliance Tracker
                   </a>
                 </li>
@@ -27,7 +32,10 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/GreenAI-Analytics/os-for-work" className="transition hover:text-white">
+                  <a
+                    href="https://github.com/GreenAI-Analytics/os-for-work"
+                    className="transition hover:text-white"
+                  >
                     OS For Work
                   </a>
                 </li>
@@ -35,7 +43,9 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">Company</h4>
+              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                Company
+              </h4>
               <ul className="space-y-3 text-slate-300">
                 <li>
                   <Link href="/" className="transition hover:text-white">
@@ -43,7 +53,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/open-source" className="transition hover:text-white">
+                  <Link
+                    href="/open-source"
+                    className="transition hover:text-white"
+                  >
                     Open Source
                   </Link>
                 </li>
@@ -56,15 +69,26 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">Connect</h4>
+              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                Connect
+              </h4>
               <div className="flex gap-4">
-                <a href="https://github.com/GreenAI-Analytics" className="rounded-full border border-slate-700 p-2 text-slate-300 transition hover:border-slate-500 hover:text-white">
+                <a
+                  href="https://github.com/GreenAI-Analytics"
+                  className="rounded-full border border-slate-700 p-2 text-slate-300 transition hover:border-slate-500 hover:text-white"
+                >
                   <Github className="h-5 w-5" />
                 </a>
-                <a href="mailto:hello@greenaianalytics.org" className="rounded-full border border-slate-700 p-2 text-slate-300 transition hover:border-slate-500 hover:text-white">
+                <a
+                  href="mailto:hello@greenaianalytics.org"
+                  className="rounded-full border border-slate-700 p-2 text-slate-300 transition hover:border-slate-500 hover:text-white"
+                >
                   <Mail className="h-5 w-5" />
                 </a>
-                <a href="https://greenaianalytics.org" className="rounded-full border border-slate-700 p-2 text-slate-300 transition hover:border-slate-500 hover:text-white">
+                <a
+                  href="https://greenaianalytics.org"
+                  className="rounded-full border border-slate-700 p-2 text-slate-300 transition hover:border-slate-500 hover:text-white"
+                >
                   <Globe className="h-5 w-5" />
                 </a>
               </div>
@@ -72,7 +96,8 @@ export default function Footer() {
           </div>
 
           <div className="mt-12 border-t border-slate-800 pt-6 text-center text-sm text-slate-400">
-            Copyright {new Date().getFullYear()} GreenAI Analytics. All rights reserved.
+            Copyright {new Date().getFullYear()} GreenAI Analytics. All rights
+            reserved.
           </div>
         </div>
       </div>
