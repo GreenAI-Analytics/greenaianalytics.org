@@ -1,3 +1,16 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact GreenAI — EU Compliance & Carbon Reporting Experts | GreenAI",
+  description:
+    "Questions about Compliance Tracker, Carbon Track AI, or OS For Work? Contact GreenAI for EU compliance automation, CSRD reporting, and carbon accounting for SMEs. We reply within hours.",
+  openGraph: {
+    title: "Contact GreenAI — EU Compliance & Carbon Reporting Experts",
+    description:
+      "Questions about Compliance Tracker, Carbon Track AI, or OS For Work? Contact GreenAI for EU compliance automation and carbon accounting.",
+  },
+};
+
 export default function ContactPage() {
   return (
     <>
@@ -5,7 +18,8 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-5xl font-bold mb-6">Get in Touch</h1>
           <p className="text-xl text-gray-600">
-            Questions about Compliance Tracker, Carbon Track AI, or OS For Work?<br />
+            Questions about Compliance Tracker, Carbon Track AI, or OS For Work?
+            <br />
             We reply within a few hours.
           </p>
         </div>
@@ -37,7 +51,9 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label className="block text-left font-medium mb-2">Message</label>
+              <label className="block text-left font-medium mb-2">
+                Message
+              </label>
               <textarea
                 name="message"
                 rows={6}
@@ -47,7 +63,11 @@ export default function ContactPage() {
               />
             </div>
 
-            <input type="hidden" name="_subject" value="New Contact Form Submission" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Form Submission"
+            />
             <input type="hidden" name="_next" value="/thanks-contact" />
 
             <button type="submit" className="w-full btn-primary text-lg py-4">
@@ -56,7 +76,15 @@ export default function ContactPage() {
           </form>
 
           <div className="mt-10 text-center text-gray-600">
-            <p>Or email us directly: <a href="mailto:sales@carbontrackai.com" className="text-primary font-medium">sales@carbontrackai.com</a></p>
+            <p>
+              Or email us directly:{" "}
+              <a
+                href="mailto:sales@carbontrackai.com"
+                className="text-primary font-medium"
+              >
+                sales@carbontrackai.com
+              </a>
+            </p>
           </div>
         </div>
       </section>

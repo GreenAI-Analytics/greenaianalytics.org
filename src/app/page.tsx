@@ -270,6 +270,84 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="px-6 py-20">
+        <div className="section-shell max-w-3xl">
+          <div className="mb-12 text-center">
+            <h2 className="text-4xl font-bold text-slate-950">
+              Frequently Asked Questions
+            </h2>
+            <p className="mt-3 text-slate-600">
+              Everything you need to know about EU compliance and carbon
+              reporting for your SME.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "What is CSRD and does it apply to my SME?",
+                a: "The Corporate Sustainability Reporting Directive (CSRD) applies to large EU companies and listed SMEs. Most non-listed SMEs use the voluntary VSME standard instead. GreenAI auto-detects your regulatory scope during onboarding — so you only see what's relevant to your business size.",
+              },
+              {
+                q: "How does NACE code compliance work?",
+                a: "Your NACE code classifies your business activity and determines which EU regulations apply to your sector. GreenAI's Compliance Tracker maps your NACE code against 31 EU/EEA countries and generates automated task instances with deadlines, reminders, and a monthly calendar view — so nothing falls through the cracks.",
+              },
+              {
+                q: "What is VSME reporting?",
+                a: "VSME (Voluntary SME standard) is EFRAG's proportionate ESG reporting framework for non-listed SMEs. It comes in two modules: VSME Basic (core disclosures: climate, workforce, governance) and VSME Comprehensive (full voluntary reporting aligned with ESRS). Carbon Track AI supports both modes plus full CSRD for in-scope entities.",
+              },
+              {
+                q: "How do I start EU sustainability reporting?",
+                a: "Start with two steps: (1) Identify your NACE code and country of operation — Compliance Tracker maps your obligations in minutes. (2) Use Carbon Track AI for Scope 1 & 2 carbon calculations, double materiality assessments, and ESRS-aligned report generation. Book a demo and we'll walk you through it.",
+              },
+              {
+                q: "What makes GreenAI different from other ESG platforms?",
+                a: "We're built specifically for EU SMEs — not repurposed enterprise software. Our platform auto-detects whether you need VSME Basic, VSME Comprehensive, or full CSRD. We combine regulatory compliance tracking (NACE-based) with carbon accounting in one connected workflow. And our open-source stack (OS For Work) gives you a complete alternative to proprietary office suites.",
+              },
+            ].map((faq, i) => (
+              <details
+                key={i}
+                className="group rounded-2xl border border-white/80 bg-white/80 p-6 shadow-sm transition hover:shadow-md"
+              >
+                <summary className="cursor-pointer text-lg font-semibold text-slate-950 list-none [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center justify-between">
+                    {faq.q}
+                    <span className="ml-4 flex-shrink-0 text-emerald-600 transition-transform duration-200 group-open:rotate-45">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                      </svg>
+                    </span>
+                  </span>
+                </summary>
+                <p className="mt-4 text-sm leading-relaxed text-slate-600">
+                  {faq.a}
+                </p>
+              </details>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center text-sm text-slate-500">
+            Still have questions?{" "}
+            <a
+              href="/contact"
+              className="font-semibold text-emerald-700 hover:text-emerald-800"
+            >
+              Contact us
+            </a>{" "}
+            — we reply within hours.
+          </p>
+        </div>
+      </section>
+
       <section className="px-6 pb-4 pt-8">
         <div className="section-shell">
           <div className="relative overflow-hidden rounded-3xl bg-slate-950 px-8 py-14 text-center text-white md:px-12">
